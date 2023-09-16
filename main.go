@@ -21,7 +21,7 @@ func main(){
 	//fmt.Println(termbox.Output256)
 	//ColorMode256 = ColorMode(256)
 	//termbox.Close()//------------------------------------------
-	video, err := vidio.NewVideo("y2matecom-san-francisco-49ers-vs-pittsburgh-steelers-game-highlights-nfl-2023-w_ukiiLk0d.mp4")
+	video, err := vidio.NewVideo("bad-apple.mp4")
 	
 	img := image.NewRGBA(image.Rect(0, 0, video.Width(), video.Height()))
 	video.SetFrameBuffer(img.Pix)
