@@ -1,2 +1,2 @@
 # terminalVideo
-added readme
+plays a video in the terminal
