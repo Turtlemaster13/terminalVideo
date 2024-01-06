@@ -1,6 +1,6 @@
 module termboxTest
 
-go 1.21.0
+go 1.21
 
 require github.com/nsf/termbox-go v1.1.1
 

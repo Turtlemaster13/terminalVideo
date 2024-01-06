@@ -25,7 +25,9 @@ func main(){
 	defer termbox.Close()
 	termbox.SetOutputMode(termbox.Output256)
 	video, err := vidio.NewVideo("badApple.mp4")
-	
+	if err != nil{
+		panic(err)
+	}
 	img := image.NewRGBA(image.Rect(0, 0, video.Width(), video.Height()))
 	video.SetFrameBuffer(img.Pix)
 
